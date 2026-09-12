@@ -34,10 +34,11 @@ header .links{
 /* ******************************************* */
 
 
-.hero,.info,.quote{
+.hero,.info,.quote,.cta{
     display: flex;
     background-color: #1F2937;
-    flex-basis: 250px;
+    flex-basis: 100px;
+    flex-shrink: 1;
     justify-content: space-around;
     padding: 50px;
 }
@@ -108,20 +109,84 @@ button {
 .card img{
     border-radius: 10px;
     border: 5px solid blue;
-    width: 150px;
-    height: 150px;
-    
+    flex: 1 1  125px;
 }
 
 .card .text{
     width: 150px;
     text-align: center;
+    flex-basis: 125px;
 }
 
 /* ******************************************* */
 
 
 .quote{
+    background-color: #E5E7EB;
+    flex-direction: column;
+}
+
+.quote .text{
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.quote .source{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+
+
+/* ******************************************* */
+
+
+.cta{
+    background-color: white;
     
 }
 
+.cta .main{
+    display: flex;
+    background-color: #3882F6;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-content: center;
+    padding: 50px;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.cta .title-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+.title-text .subtext{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.cta button{
+    background-color: #3882F6;
+    flex-basis: 125px;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+
+/* ******************************************* */
+
+footer{
+    display: flex;
+    font-size: 15px;
+    color: #F9FAF8;
+    background-color: #1F2937;
+    justify-content: space-around;
+    align-content: center;
+    padding: 30px;
+}
