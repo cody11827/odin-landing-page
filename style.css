@@ -1,0 +1,86 @@
+
+body {
+    display: flex;
+    font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    margin: 0;
+}
+
+
+header{
+    display: flex;
+    font-size: 24px;
+    color: #F9FAF8;
+    background-color: #1F2937;
+    justify-content: space-around;
+    align-content: center;
+    padding: 20px;
+}
+
+
+header .logo-text{
+    font-size: 24px;
+}
+
+header .links{
+    display: flex;
+    font-size: 18px;
+    color: #E5E7EB;
+    gap: 20px;
+}
+
+
+.hero,.info,.quote{
+    display: flex;
+    background-color: #1F2937;
+    flex-basis: 250px;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.hero .text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero .text-container .main-text , .hero .text-container .secondary-text{
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+    width: 350px;
+}
+
+.hero .text-container .secondary-text{
+    font-size: 18px;
+    color: #E5E7EB;
+    font-weight: normal;
+}
+
+button {
+    color: white;
+    background-color: #3882F6;
+    width: 125px;
+    flex-basis: 30px;
+    border-radius: 6px;
+}
+
+.hero img{
+    max-width: 100%;
+    background-color: grey;
+    height: auto;
+    width: 450px;
+}
+
+
+.info{
+    background-color: white;
+}
+
+.info .heading{
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
