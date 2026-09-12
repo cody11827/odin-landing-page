@@ -31,6 +31,8 @@ header .links{
     gap: 20px;
 }
 
+/* ******************************************* */
+
 
 .hero,.info,.quote{
     display: flex;
@@ -74,9 +76,14 @@ button {
     width: 450px;
 }
 
+/* ******************************************* */
 
 .info{
     background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
 
 .info .heading{
@@ -84,3 +91,37 @@ button {
     color: #1F2937;
     font-weight: 900;
 }
+
+.info .cards{
+    display: flex;
+    flex-direction: row;
+    text-wrap: wrap;
+    gap: 35px;
+}
+
+.cards .card{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card img{
+    border-radius: 10px;
+    border: 5px solid blue;
+    width: 150px;
+    height: 150px;
+    
+}
+
+.card .text{
+    width: 150px;
+    text-align: center;
+}
+
+/* ******************************************* */
+
+
+.quote{
+    
+}
+
